@@ -1,0 +1,11 @@
+
+# MAINTENANCE-PAGE REDIRECT
+#<IfModule mod_rewrite.c>
+# RewriteEngine on
+# RewriteCond %{REMOTE_ADDR} !^144\.134\.7\.238
+# RewriteCond %{REQUEST_URI} !/maintenance/maintenance.html$ [NC]
+# RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif) [NC]
+# RewriteRule .* /maintenance/maintenance.html [R=302,L]
+#</IfModule>
+DirectoryIndex register.php
+#My IP: 144.134.7.238
